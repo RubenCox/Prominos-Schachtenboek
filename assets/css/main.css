@@ -154,3 +154,9 @@ i {
 .note{
 	margin-top: 50px;
 }
+
+@media (max-width: 420px) { 
+.login   {
+		margin-top: -45%;
+    }
+}

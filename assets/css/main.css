@@ -152,11 +152,22 @@ i {
 }
 
 .note{
-	margin-top: 50px;
+	margin-top: 80px;
 }
-
+#brandBook{
+		max-width:50px; 
+		margin-right: 23px;
+}
 @media (max-width: 420px) { 
 .login   {
-		margin-top: -45%;
+		margin-top: -40%;
     }
+.boek{
+		width: 150px;
+		margin:auto;
+}
+.smsButton{
+		margin-left: 35%;
+}
+	
 }

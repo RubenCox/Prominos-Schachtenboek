@@ -35,7 +35,7 @@
                         $database = new medoo();
 
                         $username = $_POST['myUsername'];
-                        $password = $_POST['myPassword'];
+                        $password = md5($_POST['myPassword']);
 
                         /* Check for correct username and password */
                         $dblogin = $database->count("Schachtenmeesters", [

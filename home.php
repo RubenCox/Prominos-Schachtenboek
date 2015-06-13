@@ -10,7 +10,7 @@
 					</h1>				
 				</div><!-- /col-lg-4 -->
 				<div class="col-lg-4">
-					<img class="img-responsive" src="assets/img/Schachtenboek.png" alt="SchachtenBoek">
+					<img class="img-responsive boek" src="assets/img/Schachtenboek.png" alt="SchachtenBoek">
 				</div><!-- /col-lg-4 -->
 				<div class="col-lg-4">
 					<h1>Make your landing page<br/>

@@ -66,7 +66,7 @@
 					</form>					
 				</div><!-- /col-lg-4 -->
 				<div class="col-lg-4">
-					<img class="img-responsive" src="assets/img/ipad-hand.png" alt="SchachtenBoek">
+					<img class="img-responsive" src="assets/img/Schachtenboek.png" alt="SchachtenBoek">
 				</div><!-- /col-lg-4 -->
 				<div class="col-lg-4">
 					<h1>Registreer</h1>

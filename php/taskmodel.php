@@ -27,19 +27,9 @@ function connect()
 		'charset' => 'utf8'
 	]);
 	
-	echo "PHP MEDOO COMPLETED";
+	echo "PHP MEDOO COMPLETED" . "</br>";
 	
-	$datas = $database->select("Opdrachten", [
-		"Omschrijving"
-		
-	], [
-		"OpdrachtenID[=]" => 1
-	]);
-	echo "PHP MEDOO SELECT COMPLETED";
-	foreach($datas as $data)
-{
-	echo "<br/>" . "Omschrijving: " . $data["Omschrijving"] . "<br/>";
-}
+
 
 }
 
@@ -54,10 +44,16 @@ function markItemComplete($item_id)
 
 function getAllItems()
 {
-	$conn = connect();
-	$sql = "SELECT * FROM dbo.Schachtenmeesters";
-	$stmt = $conn->sqlsrv_query($conn, $sql);
-	return $stmt->fetchAll(PDO::FETCH_NUM);
+	require_once 'medoo.min.php';
+    $database = new medoo();
+	$datas = $database->select("Schachtenmeesters", [
+	"LoginNaam"
+	]);
+	echo "PHP MEDOO SELECT COMPLETED";
+	foreach($datas as $data)
+{
+	echo "<br/>" . "LoginNaam: " . $data["LoginNaam"] . "<br/>";
+}
 }
 
 function addItem($name, $category, $date, $is_complete)

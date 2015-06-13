@@ -50,6 +50,11 @@
 	<div id="headerwrap">
 		<div class="container">
 			<div class="row">
+			<?php
+	require_once "php/taskmodel.php";
+	$conn = connect();
+
+	?>
 				<div class="col-lg-4">
 					<h1>Login</h1>
 					<form class="form-inline" role="form">

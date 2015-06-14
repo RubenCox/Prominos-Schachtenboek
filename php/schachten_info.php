@@ -1,26 +1,5 @@
 
-	<div id="headerwrap">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-4">
-					<h1>Welkom </br>
-					<?php
-							echo	$_SESSION['username'];
-					?>
-					</h1>				
-				</div><!-- /col-lg-4 -->
-				<div class="col-lg-4">
-					<img class="img-responsive boek" src="assets/img/Schachtenboek.png" alt="SchachtenBoek">
-				</div><!-- /col-lg-4 -->
-				<div class="col-lg-4">
-					<h1>Make your landing page<br/>
-					look really good.</h1>				
-				</div><!-- /col-lg-4 -->
-				
-			</div><!-- /row -->
-		</div><!-- /container -->
-	</div><!-- /headerwrap -->
-<div class="container">
+<div class="container tab">
 	<div class="row">
 		<div class="tab-content">
 					<div class="tab-pane active col-lg-12 centered" id="daftar">
@@ -63,7 +42,7 @@
 																<a href=''><span class='glyphicon glyphicon-edit'></span> Edit</a>
 															</td>
 															<td>
-																<a href=''><span class='glyphicon glyphicon-trash'></span> Delete</a>
+																<a href='php/deleteitem.php?id=".$data['SchachtID']."' onclick=\"return confirm('Wil je deze domme schacht verwijderen?');\"><span class='glyphicon glyphicon-trash'></span> Delete</a>
 															</td>
 														</tr>";
 											}

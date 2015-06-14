@@ -26,6 +26,17 @@
                             include 'html/logout_nav_admin.html';
                         else
                             include 'html/logout_nav.html';
+					
+						if(isset($_GET['edit'])){
+							include 'html/success_edit_schacht.html';
+						}
+						else if($edit == -1){
+							
+						}
+						else{
+							
+						}
+
 						
 						include 'php/schachten/schachten_info.php';
                     }
@@ -69,6 +80,16 @@
 								include 'html/logout_nav.html';
                             include 'html/success_login.html';
 							
+							
+							if(isset($_GET['edit'])){
+								include 'html/success_edit_schacht.html';
+							}
+							else if($edit == -1){
+								
+							}
+							else{
+								
+							}
                             include 'php/schachten/schachten_info.php';
                         }
                     }

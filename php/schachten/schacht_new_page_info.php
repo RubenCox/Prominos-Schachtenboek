@@ -34,7 +34,7 @@
 				<div class="control-group">
 				  <label class="control-label" for="Schacht_Voornaam">Voornaam:</label>
 				  <div class="controls">
-					<input id="Schacht_Voornaam" name="Schacht_Voornaam" value="<?php echo $voornaam; ?>" type="text" placeholder="" class="input-xlarge" required="">
+					<input id="Schacht_Voornaam" name="Schacht_Voornaam" type="text" placeholder="Voornaam" class="input-xlarge" required="">
 					<p class="help-block">Pas hier de voornaam van de schacht aan</p>
 				  </div>
 				</div>
@@ -43,7 +43,7 @@
 				<div class="control-group">
 				  <label class="control-label" for="Schacht_Naam">Naam:</label>
 				  <div class="controls">
-					<input id="Schacht_Naam" name="Schacht_Naam" value="<?php echo $naam; ?>"type="text" placeholder="" class="input-xlarge" required="">
+					<input id="Schacht_Naam" name="Schacht_Naam" placeholder="Naam" class="input-xlarge" required="">
 					<p class="help-block">Pas hier de naam van de schacht aan.</p>
 				  </div>
 				</div>
@@ -52,7 +52,7 @@
 				<div class="control-group">
 				  <label class="control-label" for="Schacht_Leeftijd">Leeftijd</label>
 				  <div class="controls">
-					<input id="Schacht_Leeftijd" name="Schacht_Leeftijd" value="<?php echo $leeftijd; ?>" type="text" placeholder="" class="input-xlarge">
+					<input id="Schacht_Leeftijd" name="Schacht_Leeftijd" type="text" placeholder="Leeftijd" class="input-xlarge">
 					<p class="help-block">Pas hier de leeftijd van de schacht aan.</p>
 				  </div>
 				</div>
@@ -61,7 +61,7 @@
 				<div class="control-group">
 				  <label class="control-label" for="Schacht_Studie">Studie:</label>
 				  <div class="controls">
-					<input id="Schacht_Studie" name="Schacht_Studie" value="<?php echo $studie; ?>" type="text" placeholder="" class="input-xlarge">
+					<input id="Schacht_Studie" name="Schacht_Studie" type="text" placeholder="Studie" class="input-xlarge">
 					<p class="help-block">Pas hier de studie van de schacht aan.</p>
 				  </div>
 				</div>
@@ -70,7 +70,7 @@
 				<div class="control-group">
 				  <label class="control-label" for="Schacht_Peter">Peter/Meter:</label>
 				  <div class="controls">
-					<input id="Schacht_Peter" name="Schacht_Peter" value="<?php echo $petermeter; ?>" type="text" placeholder="" class="input-xlarge">
+					<input id="Schacht_Peter" name="Schacht_Peter" type="text" placeholder="Peter/Meter" class="input-xlarge">
 					<p class="help-block">Pas hier de Peter/Meter van de schacht aan</p>
 				  </div>
 				</div>
@@ -80,11 +80,9 @@
 					<button type="submit" class="btn btn-primary btn-lg">
 						<span class="glyphicon glyphicon-edit"> </span><?php echo " Bewerk  ".$voornaam; ?>
 					</button>
-					<a href="schachten.php">
-						<button type="button" class="btn btn-primary btn-lg">
-							<span class="glyphicon glyphicon-remove"> </span>Cancel
-						</button>
-					</a>
+					<button type="button" class="btn btn-primary btn-lg">
+						<span class="glyphicon glyphicon-remove"> </span>Cancel
+					</button>
 				</p>
 				<br/>
 

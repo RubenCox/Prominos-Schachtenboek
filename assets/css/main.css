@@ -153,6 +153,7 @@ i {
 
 .note{
 	margin-top: 80px;
+	margin-bottom:-80px;
 }
 #brandBook{
 		max-width:50px; 
@@ -161,12 +162,18 @@ i {
 #loginSuccess{
 	margin-left:45%;
 }
+#schachtEditSuccess{
+	margin-left:43%;
+}
 .tab{
 	margin-top: 80px;
 }
-@media (max-width: 420px) { 
+@media (max-width: 520px) { 
 #loginSuccess{
 	margin-left:30%;
+}
+#schachtEditSuccess{
+	margin-left:0%;
 }
 .login   {
 		margin-top: -40%;

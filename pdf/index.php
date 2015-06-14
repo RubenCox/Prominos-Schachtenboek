@@ -42,6 +42,9 @@ $pdf->Cell(35,10,'Cantussen',1,0,'C');
 $pdf->Cell(40,10,'Opdrachten',1,0,'C');
 $pdf->Cell(30,10,'Straffen',1,1,'C');
 $pdf->SetFont('Arial','',11);
+$pdf->SetFillColor(142,178,53); //Green
+$pdf->SetFillColor(196,63,63); //Red
+$pdf->SetFillColor(255,154,47); //Orange
 
 // Getting Data from database
 require_once 'fpdf/medoo.min.php';
@@ -52,10 +55,32 @@ $database = new medoo();
 		foreach($datas as $data)
 		{
 			$pdf->Cell(40,10,''.$data['Voornaam'].' '.$data['Naam'].'',1,0,'C');
-			$pdf->Cell(45,10,''.$data['Aanwezigheid'].'',1,0,'C');
-			$pdf->Cell(35,10,'0',1,0,'C');
-			$pdf->Cell(40,10,''.$data['Opdrachten'].'',1,0,'C');
-			$pdf->Cell(30,10,''.$data['Straffen'].'',1,1,'C');
+			if($data['Aanwezigheid'] < 4){
+				$pdf->SetFillColor(196,63,63); //Red
+			}else{
+				$pdf->SetFillColor(142,178,53); //Green
+			}
+			$pdf->Cell(45,10,''.$data['Aanwezigheid'].'',1,0,'C',true);
+			
+			$pdf->SetFillColor(196,63,63); //Red
+			$pdf->Cell(35,10,'0',1,0,'C',true);
+			if($data['Opdrachten'] == 0){
+				$pdf->SetFillColor(196,63,63); //Red
+			}else if($data['Opdrachten'] <4){
+				$pdf->SetFillColor(255,154,47); //Orange
+			}else{
+				$pdf->SetFillColor(142,178,53); //Green
+			}
+			$pdf->Cell(40,10,''.$data['Opdrachten'].'',1,0,'C',true);
+			
+			if($data['Straffen'] == 0){
+				$pdf->SetFillColor(142,178,53); //Green
+			}else if($data['Straffen'] <2){
+				$pdf->SetFillColor(255,154,47); //Orange
+			}else{
+				$pdf->SetFillColor(196,63,63); //Red
+			}
+			$pdf->Cell(30,10,''.$data['Straffen'].'',1,1,'C',true);
 		}
 
 	

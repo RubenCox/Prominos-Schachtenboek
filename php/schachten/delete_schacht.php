@@ -13,10 +13,10 @@
 	* limitations under the License. 
 	*/
 	
-include_once 'tasks.php';
+include_once '../tasks.php';
 
 $id = $_GET['id'];
-deleteItem($id);
+deleteSchacht($id);
 
-header('Location: ../schachten.php');
+header('Location: ../../schachten.php');
 ?>

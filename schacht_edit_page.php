@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <?php
-	include "html/head.html";
+	include 'html/head.html';
   ?>
 
   <body>
@@ -27,7 +27,7 @@
                         else
                             include 'html/logout_nav.html';
 						
-						include 'php/schachten/schachten_info.php';
+						include 'php/schachten/schacht_edit_page_info.php';
                     }
                     /* User is not logged in yet */
                     /* Check if any post data is send */
@@ -69,7 +69,7 @@
 								include 'html/logout_nav.html';
                             include 'html/success_login.html';
 							
-                            include 'php/schachten/schachten_info.php';
+                            include 'php/schachten/schacht_edit_page_info.php';
                         }
                     }
                     /* User has not logged in yet and has not send any post data */
@@ -85,7 +85,7 @@
                 ?>
 
   <?php
-	include "html/footer.html";
+	include 'html/footer.html';
   ?>
     <!-- Bootstrap core JavaScript
     ================================================== -->

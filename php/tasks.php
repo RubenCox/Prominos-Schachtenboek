@@ -1,18 +1,6 @@
 <?php
-/** * Copyright 2013 Microsoft Corporation 
-	*  
-	* Licensed under the Apache License, Version 2.0 (the "License"); 
-	* you may not use this file except in compliance with the License. 
-	* You may obtain a copy of the License at 
-	* http://www.apache.org/licenses/LICENSE-2.0 
-	*  
-	* Unless required by applicable law or agreed to in writing, software 
-	* distributed under the License is distributed on an "AS IS" BASIS, 
-	* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. 
-	* See the License for the specific language governing permissions and 
-	* limitations under the License. 
-	*/
-		
+
+// Connection with Azure Database		
 function connect()
 {
    require_once 'medoo.min.php';
@@ -20,29 +8,6 @@ function connect()
 	// Initialize
 		$database = new medoo();
 		return $database;
-}
-
-function markItemComplete($item_id)
-{
-	$conn = connect();
-	$sql = "UPDATE items SET is_complete = 1 WHERE id = ?";
-	$stmt = $conn->prepare($sql);
-	$stmt->bindValue(1, $item_id);
-	$stmt->execute();
-}
-
-function getAllItems()
-{
-	require_once 'medoo.min.php';
-    $database = new medoo();
-	$datas = $database->select("Schachtenmeesters", [
-	"LoginNaam"
-	]);
-	echo "PHP MEDOO SELECT COMPLETED";
-	foreach($datas as $data)
-{
-	echo "<br/>" . "LoginNaam: " . $data["LoginNaam"] . "<br/>";
-}
 }
 
 function addItem($name, $category, $date, $is_complete)
@@ -56,13 +21,13 @@ function addItem($name, $category, $date, $is_complete)
 	$stmt->bindValue(4, $is_complete);
 	$stmt->execute();
 }
-
-function deleteItem($item_id)
+// --- SCHACHTEN ---
+function deleteSchacht($schacht_id)
 {
 	$database = connect();
 	$database->delete("Schachten", [
 	"AND" => [
-		"SchachtID" => $item_id
+		"SchachtID" => $schacht_id
 	]
 	]);
 }

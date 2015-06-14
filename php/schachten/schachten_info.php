@@ -21,7 +21,7 @@
 									</thead>
 									<tbody>
 									<?php
-										require_once 'medoo.min.php';
+										require_once 'php/medoo.min.php';
 										$database = new medoo();
 										
 										$datas = $database->select("Schachten", "*"
@@ -39,10 +39,10 @@
 															<td>".$data['Opdrachten']."</td>
 															<td>".$data['Straffen']."</td>
 															<td>
-																<a href=''><span class='glyphicon glyphicon-edit'></span> Edit</a>
+																<a href='schacht_edit_page.php?id=".$data['SchachtID']."'><span class='glyphicon glyphicon-edit'></span> Edit</a>
 															</td>
 															<td>
-																<a href='php/deleteitem.php?id=".$data['SchachtID']."' onclick=\"return confirm('Wil je deze domme schacht verwijderen?');\"><span class='glyphicon glyphicon-trash'></span> Delete</a>
+																<a href='php/schachten/delete_schacht.php?id=".$data['SchachtID']."' onclick=\"return confirm('Wil je deze schacht verwijderen?');\"><span class='glyphicon glyphicon-trash'></span> Delete</a>
 															</td>
 														</tr>";
 											}

@@ -10,6 +10,12 @@
 									</span> Nieuwe Schacht
 								</button>
 							</a>
+							<a href="pdf/index.php" target="_blank">
+								<button type="button" class="btn btn-success btn-lg">
+									<span class="glyphicon glyphicon-download-alt">
+									</span> Genereer PDF
+								</button>
+							</a>
 						</p>
 						<br/>
 						<div class="table-responsive">

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <?php
-	include "html/head.html";
+	include 'html/head.html';
   ?>
 
   <body>
@@ -26,16 +26,8 @@
                             include 'html/logout_nav_admin.html';
                         else
                             include 'html/logout_nav.html';
-					
-						if(isset($_GET['edit'])){
-							include 'html/success_edit_schacht.html';
-						}
-						if(isset($_GET['add'])){
-							include 'html/success_new_schacht.html';
-						}
-
 						
-						include 'php/schachten/schachten_info.php';
+						include 'php/schachten/schacht_new_page_info.php';
                     }
                     /* User is not logged in yet */
                     /* Check if any post data is send */
@@ -77,17 +69,7 @@
 								include 'html/logout_nav.html';
                             include 'html/success_login.html';
 							
-							
-							if(isset($_GET['edit'])){
-								include 'html/success_edit_schacht.html';
-							}
-							else if($edit == -1){
-								
-							}
-							else{
-								
-							}
-                            include 'php/schachten/schachten_info.php';
+                            include 'php/schachten/schacht_new_page_info.php';
                         }
                     }
                     /* User has not logged in yet and has not send any post data */
@@ -103,7 +85,7 @@
                 ?>
 
   <?php
-	include "html/footer.html";
+	include 'html/footer.html';
   ?>
     <!-- Bootstrap core JavaScript
     ================================================== -->

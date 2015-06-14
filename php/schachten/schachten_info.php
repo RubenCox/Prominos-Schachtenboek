@@ -3,7 +3,14 @@
 		<div class="tab-content">
 					<div class="tab-pane active col-lg-12 centered" id="daftar">
 						<br/>
-						<p><button type="button" class="btn btn-primary btn-lg"><span class="glyphicon glyphicon-plus"></span> Nieuwe Schacht</button></p>
+						<p>
+							<a href="schacht_new_page.php">
+								<button type="button" class="btn btn-primary btn-lg">
+									<span class="glyphicon glyphicon-plus">
+									</span> Nieuwe Schacht
+								</button>
+							</a>
+						</p>
 						<br/>
 						<div class="table-responsive">
 							<table class="table table-hover">

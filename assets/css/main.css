@@ -158,7 +158,14 @@ i {
 		max-width:50px; 
 		margin-right: 23px;
 }
+#loginSuccess{
+	margin-left:45%;
+}
+
 @media (max-width: 420px) { 
+#loginSuccess{
+	margin-left:30%;
+}
 .login   {
 		margin-top: -40%;
     }
@@ -167,7 +174,7 @@ i {
 		margin:auto;
 }
 .smsButton{
-		margin-left: 35%;
+		
 }
-	
+
 }

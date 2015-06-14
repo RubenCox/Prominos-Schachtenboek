@@ -30,8 +30,8 @@
 				<div class="control-group">
 				  <label class="control-label" for="Schacht_Leeftijd">Leeftijd</label>
 				  <div class="controls">
-					<input id="Schacht_Leeftijd" name="Schacht_Leeftijd" type="text" placeholder="Leeftijd" class="input-xlarge">
-					<p class="help-block">Geef leeftijd schacht. </p>
+					<input id="Schacht_Leeftijd" name="Schacht_Leeftijd" value="18" type="number" placeholder="Leeftijd" class="input-xlarge" required="">
+					<p class="help-block">Geef leeftijd schacht.(vb. 18)(*) </p>
 				  </div>
 				</div>
 

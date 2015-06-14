@@ -35,7 +35,7 @@
 				  <label class="control-label" for="Schacht_Voornaam">Voornaam:</label>
 				  <div class="controls">
 					<input id="Schacht_Voornaam" name="Schacht_Voornaam" value="<?php echo $voornaam; ?>" type="text" placeholder="" class="input-xlarge" required="">
-					<p class="help-block">Pas hier de voornaam van de schacht aan</p>
+					<p class="help-block">Pas hier de voornaam van de schacht aan.(*)</p>
 				  </div>
 				</div>
 
@@ -44,7 +44,7 @@
 				  <label class="control-label" for="Schacht_Naam">Naam:</label>
 				  <div class="controls">
 					<input id="Schacht_Naam" name="Schacht_Naam" value="<?php echo $naam; ?>"type="text" placeholder="" class="input-xlarge" required="">
-					<p class="help-block">Pas hier de naam van de schacht aan.</p>
+					<p class="help-block">Pas hier de naam van de schacht aan.(*)</p>
 				  </div>
 				</div>
 
@@ -52,8 +52,8 @@
 				<div class="control-group">
 				  <label class="control-label" for="Schacht_Leeftijd">Leeftijd</label>
 				  <div class="controls">
-					<input id="Schacht_Leeftijd" name="Schacht_Leeftijd" value="<?php echo $leeftijd; ?>" type="text" placeholder="" class="input-xlarge">
-					<p class="help-block">Pas hier de leeftijd van de schacht aan.</p>
+					<input id="Schacht_Leeftijd" name="Schacht_Leeftijd" value="<?php echo $leeftijd; ?>" type="number" placeholder="" class="input-xlarge" required="">
+					<p class="help-block">Pas hier de leeftijd van de schacht aan. (*)</p>
 				  </div>
 				</div>
 

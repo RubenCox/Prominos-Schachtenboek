@@ -17,11 +17,41 @@ function Header()
 	$this->Image('Schachtenboek.png',165,12,20);
     // Line break
     $this->Ln(10);
+	
+	$this->SetFont('Arial','B',14);
+	$this->Cell(40,10,'Naam',1,0,'C');
+	$this->Cell(60,10,'Aanwezigheid',1,0,'C');
+	$this->Cell(30,10,'Cantussen',1,0,'C');
+	$this->Cell(35,10,'Opdrachten',1,0,'C');
+	$this->Cell(25,10,'Straffen',1,1,'C');
+
+	$this->Cell(40,10,'',1,0,'C');
+	$this->Cell(30,10,'Prominos',1,0,'C');
+	$this->Cell(30,10,'Andere',1,0,'C');
+	$this->Cell(30,10,'',1,0,'C');
+	$this->Cell(35,10,'',1,0,'C');
+	$this->Cell(25,10,'',1,1,'C');
+	
+	
 }
 
 // Page footer
 function Footer()
 {
+	$this->SetFont('Arial','B',14);
+	$this->Cell(40,10,'',1,0,'C');
+	$this->Cell(30,10,'Prominos',1,0,'C');
+	$this->Cell(30,10,'Andere',1,0,'C');
+	$this->Cell(30,10,'',1,0,'C');
+	$this->Cell(35,10,'',1,0,'C');
+	$this->Cell(25,10,'',1,1,'C');
+	
+	$this->Cell(40,10,'Naam',1,0,'C');
+	$this->Cell(60,10,'Aanwezigheid',1,0,'C');
+	$this->Cell(30,10,'Cantussen',1,0,'C');
+	$this->Cell(35,10,'Opdrachten',1,0,'C');
+	$this->Cell(25,10,'Straffen',1,1,'C');
+	
     // Position at 1.5 cm from bottom
     $this->SetY(-15);
     // Arial italic 8
@@ -34,13 +64,10 @@ function Footer()
 // Instanciation of inherited class
 $pdf = new PDF();
 $pdf->AliasNbPages();
+$pdf->SetAutoPageBreak(true, 30);
 $pdf->AddPage();
-$pdf->SetFont('Arial','B',14);
-$pdf->Cell(40,10,'Naam',1,0,'C');
-$pdf->Cell(45,10,'Aanwezigheid',1,0,'C');
-$pdf->Cell(35,10,'Cantussen',1,0,'C');
-$pdf->Cell(40,10,'Opdrachten',1,0,'C');
-$pdf->Cell(30,10,'Straffen',1,1,'C');
+
+
 $pdf->SetFont('Arial','',11);
 $pdf->SetFillColor(142,178,53); //Green
 $pdf->SetFillColor(196,63,63); //Red
@@ -55,15 +82,32 @@ $database = new medoo();
 		foreach($datas as $data)
 		{
 			$pdf->Cell(40,10,''.$data['Voornaam'].' '.$data['Naam'].'',1,0,'C');
-			if($data['Aanwezigheid'] < 4){
+			if($data['Aanwezigheid_Prominos'] <3){
+				$pdf->SetFillColor(196,63,63); //Red
+			}else if($data['Aanwezigheid_Prominos'] <6){
+				$pdf->SetFillColor(255,154,47); //Orange
+			}else{
+				$pdf->SetFillColor(142,178,53); //Green
+			}
+			$pdf->Cell(30,10,''.$data['Aanwezigheid_Prominos'].'',1,0,'C',true);
+			
+			if($data['Aanwezigheid_Andere'] == 0){
+				$pdf->SetFillColor(196,63,63); //Red
+			}else if($data['Aanwezigheid_Andere'] <4){
+				$pdf->SetFillColor(255,154,47); //Orange
+			}else{
+				$pdf->SetFillColor(142,178,53); //Green
+			}
+			$pdf->Cell(30,10,''.$data['Aanwezigheid_Andere'].'',1,0,'C',true);
+			
+			
+			if($data['Cantussen'] < 3){
 				$pdf->SetFillColor(196,63,63); //Red
 			}else{
 				$pdf->SetFillColor(142,178,53); //Green
 			}
-			$pdf->Cell(45,10,''.$data['Aanwezigheid'].'',1,0,'C',true);
+			$pdf->Cell(30,10,''.$data['Cantussen'].'',1,0,'C',true);
 			
-			$pdf->SetFillColor(196,63,63); //Red
-			$pdf->Cell(35,10,'0',1,0,'C',true);
 			if($data['Opdrachten'] == 0){
 				$pdf->SetFillColor(196,63,63); //Red
 			}else if($data['Opdrachten'] <4){
@@ -71,7 +115,7 @@ $database = new medoo();
 			}else{
 				$pdf->SetFillColor(142,178,53); //Green
 			}
-			$pdf->Cell(40,10,''.$data['Opdrachten'].'',1,0,'C',true);
+			$pdf->Cell(35,10,''.$data['Opdrachten'].'',1,0,'C',true);
 			
 			if($data['Straffen'] == 0){
 				$pdf->SetFillColor(142,178,53); //Green
@@ -80,7 +124,7 @@ $database = new medoo();
 			}else{
 				$pdf->SetFillColor(196,63,63); //Red
 			}
-			$pdf->Cell(30,10,''.$data['Straffen'].'',1,1,'C',true);
+			$pdf->Cell(25,10,''.$data['Straffen'].'',1,1,'C',true);
 		}
 
 	

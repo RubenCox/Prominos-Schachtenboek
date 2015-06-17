@@ -57,4 +57,42 @@ function addSchacht($voornaam, $naam, $leeftijd, $studie, $petermeter)
 		]);
 }
 
+// --- EVENEMENTEN ---
+
+function deleteEvenement($evenement_id)
+{
+	$database = connect();
+	$database->delete("Evenementen", [
+	"AND" => [
+		"EvenementenID" => $evenement_id
+	]
+	]);
+}
+function editEvenement($evenement_id, $naam, $soort, $vanwie, $plaats, $omschrijving)
+{
+	$database = connect();
+	$database->update("Evenementen", [
+		 "Naam"=>$naam,
+		 "Soort"=>$soort,
+		 "VanWie"=>$vanwie,
+		 "Plaats"=>$plaats,
+		 "Omschrijving"=>$omschrijving
+		  ],
+		  [
+		"EvenementenID"=>$evenement_id
+		]);
+}
+function addEvenement($naam, $soort, $vanwie, $plaats, $omschrijving)
+{
+	$database = connect();
+	$database->insert("Evenementen", [
+		 "Naam"=>$naam,
+		 "Soort"=>$soort,
+		 "VanWie"=>$vanwie,
+		 "Plaats"=>$plaats,
+		 "Omschrijving"=>$omschrijving
+		]);
+}
+
+
 ?>

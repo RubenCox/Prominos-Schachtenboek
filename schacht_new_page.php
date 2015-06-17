@@ -4,7 +4,7 @@
 	include 'html/head.html';
   ?>
 
-  <body>
+  <body onload="start();">
 
   
 

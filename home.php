@@ -38,14 +38,14 @@
 			</div><!--/col-lg-4 -->
 
 			<div class="col-lg-4">
-				<img src="assets/img/ser02.png" width="180" alt="">
+				<a href="inzet.php"><img src="assets/img/ser02.png" width="180" alt=""></a>
 				<h4>2 - Inzet</h4>
 				<p>Evalueer je schachten op Aanwezigheid, opdrachten en straffen!</p>
 
 			</div><!--/col-lg-4 -->
 
 			<div class="col-lg-4">
-				<img src="assets/img/ser03.png" width="180" alt="">
+				<a href="evenementen.php"><img src="assets/img/ser03.png" width="180" alt=""></a>
 				<h4>3 - Evenementen</h4>
 				<p>Beheer hier je evenementen!</p>
 

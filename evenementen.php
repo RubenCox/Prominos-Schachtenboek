@@ -3,12 +3,15 @@
   <?php
 	include "html/head.html";
   ?>
+      <!-- Placed at the end of the document so the pages load faster -->
+
 
   <body onload="start();">
 
   
 
 <?php
+					
                     session_start();
                     require_once 'php/medoo.min.php';
                     $database = new medoo();
@@ -25,8 +28,16 @@
                             include 'html/logout_nav_admin.html';
                         else
                             include 'html/logout_nav.html';
+					
+						if(isset($_GET['edit'])){
+							include 'html/success_edit_evenement.html';
+						}
+						if(isset($_GET['add'])){
+							include 'html/success_new_evenement.html';
+						}
 
-                        include 'home.php';
+						
+						include 'php/evenementen/evenementen_info.php';
                     }
                     /* User is not logged in yet */
                     /* Check if any post data is send */
@@ -67,7 +78,15 @@
                             else
 								include 'html/logout_nav.html';
                             include 'html/success_login.html';
-                            include 'home.php';
+							
+							
+							if(isset($_GET['edit'])){
+							include 'html/success_edit_evenement.html';
+							}
+							if(isset($_GET['add'])){
+								include 'html/success_new_evenement.html';
+							}
+                            include 'php/evenementen/evenementen_info.php';
                         }
                     }
                     /* User has not logged in yet and has not send any post data */
@@ -90,5 +109,6 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
+
   </body>
 </html>

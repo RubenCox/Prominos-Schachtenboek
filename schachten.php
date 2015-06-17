@@ -4,7 +4,7 @@
 	include "html/head.html";
   ?>
 
-  <body>
+  <body onload="start();">
 
   
 
@@ -22,11 +22,12 @@
                                     "LoginNaam" => $_SESSION['username'],
                                     "LoginWachtwoord" => $_SESSION['password']
                                     ]]);
-                        if($user['Admin'] > 9)
-                            include 'html/logout_nav_admin.html';
-                        else
-                            include 'html/logout_nav.html';
-					
+                        if($user['Admin'] > 9){
+							include 'html/logout_nav_admin.html';
+						}
+                        else{
+							include 'html/logout_nav.html';
+						}
 						if(isset($_GET['edit'])){
 							include 'html/success_edit_schacht.html';
 						}

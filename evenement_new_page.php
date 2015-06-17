@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <?php
-	include "html/head.html";
+	include 'html/head.html';
   ?>
 
   <body onload="start();">
@@ -9,6 +9,7 @@
   
 
 <?php
+					
                     session_start();
                     require_once 'php/medoo.min.php';
                     $database = new medoo();
@@ -25,8 +26,8 @@
                             include 'html/logout_nav_admin.html';
                         else
                             include 'html/logout_nav.html';
-
-                        include 'home.php';
+						
+						include 'php/evenementen/evenement_new_page_info.php';
                     }
                     /* User is not logged in yet */
                     /* Check if any post data is send */
@@ -67,7 +68,8 @@
                             else
 								include 'html/logout_nav.html';
                             include 'html/success_login.html';
-                            include 'home.php';
+							
+                            include 'php/evenementen/evenement_new_page_info.php';
                         }
                     }
                     /* User has not logged in yet and has not send any post data */
@@ -83,7 +85,7 @@
                 ?>
 
   <?php
-	include "html/footer.html";
+	include 'html/footer.html';
   ?>
     <!-- Bootstrap core JavaScript
     ================================================== -->

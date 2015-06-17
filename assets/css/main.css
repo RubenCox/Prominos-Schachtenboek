@@ -168,7 +168,14 @@ i {
 .tab{
 	margin-top: 80px;
 }
-@media (max-width: 520px) { 
+.boek{
+		margin:auto;
+}
+.table_schacht:hover{
+	background-color: #91C1EB;
+}
+
+@media (max-width: 480px) { 
 #loginSuccess{
 	margin-left:30%;
 }
@@ -176,10 +183,30 @@ i {
 	margin-left:0%;
 }
 .login   {
-		margin-top: -40%;
+		margin-top: -35%;
     }
 .boek{
 		width: 150px;
+		margin:auto;
+}
+.smsButton{
+		
+}
+
+
+}
+@media (max-width:960px) and (min-width:480px) { 
+#loginSuccess{
+	margin-left:30%;
+}
+#schachtEditSuccess{
+	margin-left:0%;
+}
+.login   {
+		margin-top: -17%;
+    }
+.boek{
+		width: 300px;
 		margin:auto;
 }
 .smsButton{

@@ -153,21 +153,21 @@
 		
 		<div class="row mt centered">
 			<div class="col-lg-4">
-				<img class="img-circle" src="assets/img/SchachtenMeesters/2015-2016/Lieven.jpg" width="140" alt="Lieven">
+				<img class="img-circle" src="assets/img/SchachtenMeesters/2015 - 2016/Lieven.jpg" width="140" alt="Lieven">
 				<h4>Lieven Detilloux</h4>
 				<p>Schachtenmeester</p>
 				<p><i class="glyphicon glyphicon-send"></i> <i class="glyphicon glyphicon-phone"></i> <i class="glyphicon glyphicon-globe"></i></p>
 			</div><!--/col-lg-4 -->
 
 			<div class="col-lg-4">
-				<img class="img-circle" src="assets/img/SchachtenMeesters/2015-2016/Héjz.jpg" width="140" alt="Héjz">
+				<img class="img-circle" src="assets/img/SchachtenMeesters/2015 - 2016/Héjz.jpg" width="140" alt="Héjz">
 				<h4>Elies 'Héjz' Keustermans</h4>
 				<p>Schachtenmeesteres</p>
 				<p><i class="glyphicon glyphicon-send"></i> <i class="glyphicon glyphicon-phone"></i> <i class="glyphicon glyphicon-globe"></i></p>
 			</div><!--/col-lg-4 -->
 
 			<div class="col-lg-4">
-				<img class="img-circle" src="assets/img/SchachtenMeesters/2015-2016/Madicken.jpg" width="140" alt="Madicken">
+				<img class="img-circle" src="assets/img/SchachtenMeesters/2015 - 2016/Madicken.jpg" width="140" alt="Madicken">
 				<h4>Madicken Lobbestael</h4>
 				<p>Schachtentemmer</p>
 				<p><i class="glyphicon glyphicon-send"></i> <i class="glyphicon glyphicon-phone"></i> <i class="glyphicon glyphicon-globe"></i></p>

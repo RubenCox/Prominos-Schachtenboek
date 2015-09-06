@@ -50,13 +50,29 @@
 
 			</div><!--/col-lg-4 -->
 			
+		</div><!-- /row -->
+		<div class="row mt centered">
 			<div class="col-lg-4">
 				<a href="straffen.php"><img src="assets/img/pic1.jpg" width="180" alt=""></a>
 				<h4>4 - Straffen</h4>
 				<p>Beheer de straffen + hun graad.</p>
 
 			</div><!--/col-lg-4 -->
+			<div class="col-lg-4">
+				<a href="straffen.php"><img src="assets/img/pic1.jpg" width="180" alt=""></a>
+				<h4>5 - Opdrachten</h4>
+				<p>Beheer de opdrachten.</p>
+
+			</div><!--/col-lg-4 -->
+			<div class="col-lg-4">
+				<a href="straffen.php"><img src="assets/img/pic1.jpg" width="180" alt=""></a>
+				<h4>6 - Straffen</h4>
+				<p>Beheer de straffen + hun graad.</p>
+
+			</div><!--/col-lg-4 -->
+			
 		</div><!-- /row -->
+	
 	</div><!-- /container -->
 	
 	<div class="container">
@@ -137,21 +153,21 @@
 		
 		<div class="row mt centered">
 			<div class="col-lg-4">
-				<img class="img-circle" src="assets/img/Lieven.jpg" width="140" alt="Lieven">
+				<img class="img-circle" src="assets/img/SchachtenMeesters/2015-2016/Lieven.jpg" width="140" alt="Lieven">
 				<h4>Lieven Detilloux</h4>
 				<p>Schachtenmeester</p>
 				<p><i class="glyphicon glyphicon-send"></i> <i class="glyphicon glyphicon-phone"></i> <i class="glyphicon glyphicon-globe"></i></p>
 			</div><!--/col-lg-4 -->
 
 			<div class="col-lg-4">
-				<img class="img-circle" src="assets/img/Héjz.jpg" width="140" alt="Héjz">
+				<img class="img-circle" src="assets/img/SchachtenMeesters/2015-2016/Héjz.jpg" width="140" alt="Héjz">
 				<h4>Elies 'Héjz' Keustermans</h4>
 				<p>Schachtenmeesteres</p>
 				<p><i class="glyphicon glyphicon-send"></i> <i class="glyphicon glyphicon-phone"></i> <i class="glyphicon glyphicon-globe"></i></p>
 			</div><!--/col-lg-4 -->
 
 			<div class="col-lg-4">
-				<img class="img-circle" src="assets/img/Madicken.jpg" width="140" alt="Madicken">
+				<img class="img-circle" src="assets/img/SchachtenMeesters/2015-2016/Madicken.jpg" width="140" alt="Madicken">
 				<h4>Madicken Lobbestael</h4>
 				<p>Schachtentemmer</p>
 				<p><i class="glyphicon glyphicon-send"></i> <i class="glyphicon glyphicon-phone"></i> <i class="glyphicon glyphicon-globe"></i></p>

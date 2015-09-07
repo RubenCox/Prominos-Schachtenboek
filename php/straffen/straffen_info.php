@@ -68,7 +68,7 @@
 					<div class="tab-pane active col-lg-12 centered" id="daftar">
 						<br/>
 						<p>
-							<a href="evenement_new_page.php">
+							<a href="straf_new_page.php">
 								<button type="button" class="btn btn-primary btn-lg">
 									<span class="glyphicon glyphicon-plus">
 									</span> Nieuwe Straf

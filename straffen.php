@@ -30,10 +30,10 @@
                             include 'html/logout_nav.html';
 					
 						if(isset($_GET['edit'])){
-							include 'html/success_edit_evenement.html';
+							include 'html/success_edit_straf.html';
 						}
 						if(isset($_GET['add'])){
-							include 'html/success_new_evenement.html';
+							include 'html/success_new_straf.html';
 						}
 
 						
@@ -81,10 +81,10 @@
 							
 							
 							if(isset($_GET['edit'])){
-							include 'html/success_edit_evenement.html';
+							include 'html/success_edit_straf.html';
 							}
 							if(isset($_GET['add'])){
-								include 'html/success_new_evenement.html';
+								include 'html/success_new_straf.html';
 							}
                             include 'php/straffen/straffen_info.php';
                         }

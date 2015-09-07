@@ -105,7 +105,7 @@
 																<a class='gl_size' href='straf_edit_page.php?id=".$data['StrafID']."'><span class='glyphicon glyphicon-edit '></span><span class='hidden-xs'>Edit</span></a>
 															</td>
 															<td>
-																<a href='php/evenementen/delete_straf.php?id=".$data['StrafID']."' onclick=\"return confirm('Wil je dit evenement verwijderen?');\"><span class='glyphicon glyphicon-trash gl_size'></span><span class='hidden-xs'>Delete</span></a>
+																<a href='php/evenementen/delete_straf.php?id=".$data['StrafID']."' onclick=\"return confirm('Wil je deze straf verwijderen?');\"><span class='glyphicon glyphicon-trash gl_size'></span><span class='hidden-xs'>Delete</span></a>
 															</td>
 														</tr>";
 											}

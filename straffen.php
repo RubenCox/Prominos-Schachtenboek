@@ -37,7 +37,7 @@
 						}
 
 						
-						include 'php/evenementen/evenementen_info.php';
+						include 'php/straffen/straffen_info.php';
                     }
                     /* User is not logged in yet */
                     /* Check if any post data is send */

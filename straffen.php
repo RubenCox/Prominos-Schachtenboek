@@ -86,7 +86,7 @@
 							if(isset($_GET['add'])){
 								include 'html/success_new_evenement.html';
 							}
-                            include 'php/evenementen/evenementen_info.php';
+                            include 'php/straffen/straffen_info.php';
                         }
                     }
                     /* User has not logged in yet and has not send any post data */

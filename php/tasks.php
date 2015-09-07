@@ -93,6 +93,37 @@ function addEvenement($naam, $soort, $vanwie, $plaats, $omschrijving)
 		 "Omschrijving"=>$omschrijving
 		]);
 }
+// --- STRAFFEN ---
 
+function deleteStraf($straf_id)
+{
+	$database = connect();
+	$database->delete("Straffen", [
+	"AND" => [
+		"StrafID" => $straf_id
+	]
+	]);
+}
+function editStraf($straf_id, $naam, $omschrijving, $sterkte)
+{
+	$database = connect();
+	$database->update("Straffen", [
+		 "Naam"=>$naam,
+		 "Omschrijving"=>$omschrijving,
+		 "Sterkte"=>$sterkte
+		  ],
+		  [
+		"StrafID"=>$straf_id
+		]);
+}
+function addStraf($naam, $omschrijving, $sterkte)
+{
+	$database = connect();
+	$database->insert("Straffen", [
+		 "Naam"=>$naam,
+		 "Omschrijving"=>$omschrijving,
+		 "Sterkte"=>$sterkte
+		]);
+}
 
 ?>

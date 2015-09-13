@@ -29,6 +29,7 @@
                                 include 'home_admin.php';
                             else
 								include 'home.php';
+						echo $user['Admin'];
                     }
                     /* User is not logged in yet */
                     /* Check if any post data is send */

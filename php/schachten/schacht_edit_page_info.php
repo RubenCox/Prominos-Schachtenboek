@@ -16,6 +16,8 @@
 										$naam =$data['Naam'];
 										$leeftijd =$data['Leeftijd'];
 										$studie = $data['Studie'];
+										$geslacht = $data['Geslacht'];
+										$foto = $data['Foto'];
 										$petermeter = $data['Peter/Meter'];
 										}				
 									?>
@@ -30,6 +32,14 @@
 					echo " Bewerk ".$naam_volledig;
 				?></legend>
 
+				<!-- File input-->
+				<div class="form-group">
+					<label for="Schacht_Foto">Foto</label>
+					<img src="../../assets/img/Schachten/Schacht.png" class="img-circle" alt="Profielfoto" width="236" height="236"> 
+					<input type="file" id="Schacht_Foto" name="Schacht_Foto" placeholder="" class="input-xlarge">
+					<p class="help-block">Kies een profielfoto voor deze Schacht.</p>
+				</div>
+				
 				<!-- Text input-->
 				<div class="control-group">
 				  <label class="control-label" for="Schacht_Voornaam">Voornaam:</label>
@@ -57,6 +67,18 @@
 				  </div>
 				</div>
 
+				<!-- Select Basic -->
+				<div class="control-group">
+				  <label class="control-label" for="Schacht_Geslacht">Geslacht</label>
+				  <div class="controls">
+					<select id="Schacht_Geslacht"  name="Schacht_Geslacht" class="input-xlarge">
+					  <option <?php if ($geslacht == "Man" ) echo 'selected'; ?>>Man</option>
+					  <option <?php if ($geslacht == "Vrouw" ) echo 'selected'; ?>>Vrouw</option>
+					  <option <?php if ($geslacht == "Overige" ) echo 'selected'; ?>>Overige</option>
+					</select>
+				  </div>
+				</div>
+				
 				<!-- Text input-->
 				<div class="control-group">
 				  <label class="control-label" for="Schacht_Studie">Studie:</label>

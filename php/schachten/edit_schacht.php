@@ -1,7 +1,7 @@
 <?php
 	include_once '../tasks.php';
 
-	$target_dir = "../../assets/img/Schachten";
+	$target_dir = "../../assets/img/Schachten/";
 	$target_file = $target_dir . basename($_FILES["Schacht_Foto"]["name"]);
 	$uploadOk = 1;
 	$imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);

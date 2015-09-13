@@ -35,7 +35,7 @@
 				<!-- File input-->
 				<div class="form-group">
 					<label for="Schacht_Foto">Foto</label>
-					<img src="../../assets/img/Schachten/Schacht.png" class="img-circle" alt="Profielfoto" width="236" height="236"> 
+					<img src="../../assets/img/Schachten/<?php echo $foto;?>" class="img-circle" alt="Profielfoto" width="100" height="100"> 
 					<input type="file" id="Schacht_Foto" name="Schacht_Foto" placeholder="" class="input-xlarge">
 					<p class="help-block">Kies een profielfoto voor deze Schacht.</p>
 				</div>

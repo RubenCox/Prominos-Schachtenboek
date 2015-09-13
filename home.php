@@ -13,7 +13,9 @@
 					<img class="img-responsive boek" src="assets/img/Schachtenboek.png" alt="SchachtenBoek">
 				</div><!-- /col-lg-4 -->
 				<div class="col-lg-4">
-					<h1>Beheren</h1>				
+					<h1><?php
+							echo	$user['Admin'];
+					?></h1>				
 				</div><!-- /col-lg-4 -->
 				
 			</div><!-- /row -->

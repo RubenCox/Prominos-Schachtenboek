@@ -67,7 +67,12 @@
                             else
 								include 'html/logout_nav.html';
                             include 'html/success_login.html';
-                            include 'home.php';
+                            
+							if($user['Admin'] > 9)
+                                include 'home_admin.php';;
+                            else
+								include 'home.php';;
+							
                         }
                     }
                     /* User has not logged in yet and has not send any post data */

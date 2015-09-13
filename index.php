@@ -21,12 +21,12 @@
                                     "LoginNaam" => $_SESSION['username'],
                                     "LoginWachtwoord" => $_SESSION['password']
                                     ]]);
-                        if($user['Admin'] > 9)
-                            include 'html/logout_nav_admin.html';
-                        else
-                            include 'html/logout_nav.html';
-
-                        include 'home.php';
+                       
+                        include 'html/logout_nav.html';
+							if($user['Admin'] > 9)
+                                include 'home_admin.php';
+                            else
+								include 'home.php';
                     }
                     /* User is not logged in yet */
                     /* Check if any post data is send */
@@ -62,16 +62,14 @@
                                     "LoginNaam" => $username,
                                     "LoginWachtwoord" => $password
                                     ]]);
-                            if($user['Admin'] > 9)
-                                include 'html/logout_nav_admin.html';
-                            else
-								include 'html/logout_nav.html';
+                           
+							include 'html/logout_nav.html';
                             include 'html/success_login.html';
                             
 							if($user['Admin'] > 9)
-                                include 'home_admin.php';;
+                                include 'home_admin.php';
                             else
-								include 'home.php';;
+								include 'home.php';
 							
                         }
                     }

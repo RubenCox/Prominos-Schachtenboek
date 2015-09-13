@@ -25,7 +25,7 @@
                         include 'html/logout_nav.html';
 							if($user['Admin'] > 9)
                                 include 'home_admin.php';
-                            else
+                            //else
 								//include 'home.php';
                     }
                     /* User is not logged in yet */
@@ -68,7 +68,7 @@
                             
 							if($user['Admin'] > 9)
                                 include 'home_admin.php';
-                            else
+                            //else
 								//include 'home.php';
 							
                         }

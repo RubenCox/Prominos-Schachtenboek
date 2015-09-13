@@ -22,7 +22,7 @@
                                     "LoginWachtwoord" => $_SESSION['password']
                                     ]]);
                         include 'html/logout_nav.html';
-							if($user['Admin'] > 5)
+							if($_SESSION['username'] == 'Admin')
                                 include 'home_admin.php';
                             else
 								include 'home.php';
@@ -61,11 +61,10 @@
                                     "LoginNaam" => $username,
                                     "LoginWachtwoord" => $password
                                     ]]);
-
 							include 'html/logout_nav.html';
                             include 'html/success_login.html';
                             
-							if($user['Admin'] > 5)
+							if($_SESSION['username'] == 'Admin')
                                 include 'home_admin.php';
                             else
 								include 'home.php';

@@ -21,9 +21,11 @@
                                     "LoginNaam" => $_SESSION['username'],
                                     "LoginWachtwoord" => $_SESSION['password']
                                     ]]);
-                       
+                       $admin = $database->get("Schachtenmeesters", "Admin", [
+									"LoginNaam" => $_SESSION['username']
+								]);
                         include 'html/logout_nav.html';
-							if($user['Admin'] > 9)
+							if($admin > 5)
                                 include 'home_admin.php';
                             else
 								include 'home.php';
@@ -62,11 +64,13 @@
                                     "LoginNaam" => $username,
                                     "LoginWachtwoord" => $password
                                     ]]);
-                           
+							$admin = $database->get("Schachtenmeesters", "Admin", [
+									"LoginNaam" => $_SESSION['username']
+								]);
 							include 'html/logout_nav.html';
                             include 'html/success_login.html';
                             
-							if($user['Admin'] > 9)
+							if($admin > 5)
                                 include 'home_admin.php';
                             else
 								include 'home.php';

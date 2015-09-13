@@ -26,7 +26,7 @@
 							if($user['Admin'] > 9)
                                 include 'home_admin.php';
                             else
-								include 'home.php';
+								//include 'home.php';
                     }
                     /* User is not logged in yet */
                     /* Check if any post data is send */
@@ -69,7 +69,7 @@
 							if($user['Admin'] > 9)
                                 include 'home_admin.php';
                             else
-								include 'home.php';
+								//include 'home.php';
 							
                         }
                     }

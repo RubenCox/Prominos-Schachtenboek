@@ -30,7 +30,7 @@
 		
 		<div class="row mt centered">
 			<div class="col-lg-4">
-				<a href="schachten.php"><img src="assets/img/Schachten/Schachten.png" width="180" alt=""></a>
+				<a href="schachten.php"><img src="assets/img/Schachten/Schacht.png" width="180" alt=""></a>
 				<h4>1 - Schachten</h4>
 				<p>Beheer hier je schachten!</p>
 			</div><!--/col-lg-4 -->

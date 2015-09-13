@@ -20,17 +20,18 @@
 		</div><!-- /container -->
 	</div><!-- /headerwrap -->
 	
+	
 	<div class="container">
 		<div class="row mt centered">
 			<div class="col-lg-6 col-lg-offset-3">
-				<h1>Schachten</h1>
-				<h3>Beheren van alle schachten!</h3>
+				<h1>Beheren</h1>
+				<h3>Hier kan de admin schachten, inzet en evenementen beheren</h3>
 			</div>
 		</div><!-- /row -->
 		
 		<div class="row mt centered">
 			<div class="col-lg-4">
-				<a href="schachten.php"><img src="assets/img/Schachten/Schachten.png" width="180" alt=""></a>
+				<a href="schachten.php"><img src="assets/img/ser01.png" width="180" alt=""></a>
 				<h4>1 - Schachten</h4>
 				<p>Beheer hier je schachten!</p>
 			</div><!--/col-lg-4 -->
@@ -48,44 +49,31 @@
 				<p>Beheer hier je evenementen!</p>
 
 			</div><!--/col-lg-4 -->
+			
 		</div><!-- /row -->
+		<div class="row mt centered">
+			<div class="col-lg-4">
+				<a href="straffen.php"><img src="assets/img/pic1.jpg" width="180" alt=""></a>
+				<h4>4 - Straffen</h4>
+				<p>Beheer de straffen + hun graad.</p>
+
+			</div><!--/col-lg-4 -->
+			<div class="col-lg-4">
+				<a href="straffen.php"><img src="assets/img/pic1.jpg" width="180" alt=""></a>
+				<h4>5 - Opdrachten</h4>
+				<p>Beheer de opdrachten.</p>
+
+			</div><!--/col-lg-4 -->
+			<div class="col-lg-4">
+				<a href="straffen.php"><img src="assets/img/pic1.jpg" width="180" alt=""></a>
+				<h4>6 - Straffen</h4>
+				<p>Beheer de straffen + hun graad.</p>
+
+			</div><!--/col-lg-4 -->
+			
+		</div><!-- /row -->
+	
 	</div><!-- /container -->
-	
-	<div class="container">
-		<div class="row mt centered">
-			<div class="col-lg-6 col-lg-offset-3">
-				<h1>Toevoegingen in de toekomst</h1>
-				<h3>Mogelijke Upgrades van het schachtenboek!</h3>
-			</div>
-		</div><!-- /row -->
-	
-		<! -- CAROUSEL -->
-		<div class="row mt centered">
-			<div class="col-lg-6 col-lg-offset-3">
-				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-				  <!-- Indicators -->
-				  <ol class="carousel-indicators">
-				    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-				    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-				    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-				  </ol>
-				
-				  <!-- Wrapper for slides -->
-				  <div class="carousel-inner">
-				    <div class="item active">
-				      <img src="assets/img/p01.png" alt="">
-				    </div>
-				    <div class="item">
-				      <img src="assets/img/p02.png" alt="">
-				    </div>
-				    <div class="item">
-				      <img src="assets/img/p03.png" alt="">
-				    </div>
-				  </div>
-				</div>			
-			</div><!-- /col-lg-8 -->
-		</div><!-- /row -->
-	</div><! --/container -->
 
 	<div class="container">
 		<div class="row mt centered">

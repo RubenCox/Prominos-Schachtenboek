@@ -21,18 +21,11 @@
                                     "LoginNaam" => $_SESSION['username'],
                                     "LoginWachtwoord" => $_SESSION['password']
                                     ]]);
-                       $admin = $database->get("Schachtenmeesters", "Admin", [
-									"LoginNaam" => $_SESSION['username']
-								]);
                         include 'html/logout_nav.html';
-							if($_SESSION['username'] == 'Admin')
+							if($user['Admin'] > 5)
                                 include 'home_admin.php';
                             else
 								include 'home.php';
-						echo $user['Admin'];
-						echo $user['Admin'];
-						echo $user['Admin'];
-						echo $user['Admin'];
                     }
                     /* User is not logged in yet */
                     /* Check if any post data is send */
@@ -68,21 +61,14 @@
                                     "LoginNaam" => $username,
                                     "LoginWachtwoord" => $password
                                     ]]);
-							$admin = $database->get("Schachtenmeesters", "Admin", [
-									"LoginNaam" => $_SESSION['username']
-								]);
+
 							include 'html/logout_nav.html';
                             include 'html/success_login.html';
                             
-							if($_SESSION['username'] == 'Admin')
+							if($user['Admin'] > 5)
                                 include 'home_admin.php';
                             else
 								include 'home.php';
-							echo $user['Admin'];
-							echo $user['Admin'];
-							echo $user['Admin'];
-							echo $user['Admin'];
-							echo $user['Admin'];
 							
                         }
                     }

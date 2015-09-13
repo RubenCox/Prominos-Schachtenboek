@@ -2,7 +2,7 @@
 	include_once '../tasks.php';
 
 	$target_dir = "../../assets/img/Schachten/";
-	$target_file = $_SERVER['DOCUMENT_ROOT'] . $target_dir . $_FILES["Schacht_Foto"]["name"]
+	$target_file = $target_dir . $_FILES["Schacht_Foto"]["name"]
 	$uploadOk = 1;
 	$imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
 	// Check if image file is a actual image or fake image

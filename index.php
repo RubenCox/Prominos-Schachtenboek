@@ -23,10 +23,9 @@
                                     ]]);
                        
                         include 'html/logout_nav.html';
-							if($user['Admin'] > 8)
-                                
-                            else
-								
+						
+                                include 'home_admin.php';
+                          
                     }
                     /* User is not logged in yet */
                     /* Check if any post data is send */
@@ -66,10 +65,9 @@
 							include 'html/logout_nav.html';
                             include 'html/success_login.html';
                             
-							if($user['Admin'] > 9)
+							
                                 include 'home_admin.php';
-                            else
-								include 'home.php';
+                       
 							
                         }
                     }

@@ -23,7 +23,7 @@
 									?>
 	<div class="row">
 		<div class="col-lg-12 centered col-offset-2">
-			<form class="form-horizontal" method="post" action="php/schachten/edit_schacht.php?id=<?php echo $id;?>">
+			<form class="form-horizontal" method="post" action="php/schachten/edit_schacht.php?id=<?php echo $id;?>" enctype="multipart/form-data">
 				<fieldset>
 
 				<!-- Form Name -->

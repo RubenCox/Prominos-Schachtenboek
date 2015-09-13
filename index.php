@@ -23,8 +23,8 @@
                                     ]]);
                        
                         include 'html/logout_nav.html';
-							if($user['Admin'] > 9)
-                                include 'home_admin.php';
+							if($user['Admin'] > 8)
+                                
                             else
 								include 'home.php';
                     }

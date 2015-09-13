@@ -45,7 +45,7 @@ function editSchacht($schacht_id, $voornaam, $naam, $leeftijd, $studie, $peterme
 		"SchachtID"=>$schacht_id
 		]);
 }
-function addSchacht($voornaam, $naam, $leeftijd, $studie, $petermeter)
+function addSchacht($voornaam, $naam, $leeftijd, $studie, $geslacht)
 {
 	$database = connect();
 	$database->insert("Schachten", [
@@ -53,7 +53,7 @@ function addSchacht($voornaam, $naam, $leeftijd, $studie, $petermeter)
 		 "Naam"=>$naam,
 		 "Leeftijd"=>$leeftijd,
 		 "Studie"=>$studie,
-		 "Peter/Meter"=>$petermeter
+		 "Geslacht"=>$geslacht
 		]);
 }
 

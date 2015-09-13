@@ -34,6 +34,18 @@
 					<p class="help-block">Geef leeftijd schacht.(vb. 18)(*) </p>
 				  </div>
 				</div>
+				
+				<!-- Select Basic -->
+				<div class="control-group">
+				  <label class="control-label" for="Schacht_Geslacht">Geslacht</label>
+				  <div class="controls">
+					<select id="Schacht_Geslacht" name="Schacht_Geslacht" class="input-xlarge">
+					  <option>Man</option>
+					  <option>Vrouw</option>
+					  <option>Overig</option>
+					</select>
+				  </div>
+				</div>
 
 				<!-- Text input-->
 				<div class="control-group">
@@ -44,14 +56,7 @@
 				  </div>
 				</div>
 
-				<!-- Text input-->
-				<div class="control-group">
-				  <label class="control-label" for="Schacht_Peter">Peter/Meter:</label>
-				  <div class="controls">
-					<input id="Schacht_Peter" name="Schacht_Peter" type="text" placeholder="Peter/Meter" class="input-xlarge">
-					<p class="help-block">Geef peter/meter schacht. </p>
-				  </div>
-				</div>
+				
 				
 				<br/>
 				<p>

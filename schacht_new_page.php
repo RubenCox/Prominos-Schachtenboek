@@ -22,9 +22,6 @@
                                     "LoginNaam" => $_SESSION['username'],
                                     "LoginWachtwoord" => $_SESSION['password']
                                     ]]);
-                        if($user['Admin'] > 9)
-                            include 'html/logout_nav_admin.html';
-                        else
                             include 'html/logout_nav.html';
 						
 						include 'php/schachten/schacht_new_page_info.php';
@@ -63,9 +60,6 @@
                                     "LoginNaam" => $username,
                                     "LoginWachtwoord" => $password
                                     ]]);
-                            if($user['Admin'] > 9)
-                                include 'html/logout_nav_admin.html';
-                            else
 								include 'html/logout_nav.html';
                             include 'html/success_login.html';
 							

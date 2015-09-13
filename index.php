@@ -26,7 +26,7 @@
 							if($user['Admin'] > 8)
                                 
                             else
-								include 'home.php';
+								
                     }
                     /* User is not logged in yet */
                     /* Check if any post data is send */

@@ -25,7 +25,7 @@
 									"LoginNaam" => $_SESSION['username']
 								]);
                         include 'html/logout_nav.html';
-							if($admin > 5)
+							if($_SESSION['username'] == 'Admin')
                                 include 'home_admin.php';
                             else
 								include 'home.php';
@@ -70,7 +70,7 @@
 							include 'html/logout_nav.html';
                             include 'html/success_login.html';
                             
-							if($admin > 5)
+							if($_SESSION['username'] == 'Admin')
                                 include 'home_admin.php';
                             else
 								include 'home.php';

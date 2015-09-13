@@ -31,7 +31,7 @@ function deleteSchacht($schacht_id)
 	]
 	]);
 }
-function editSchacht($schacht_id, $voornaam, $naam, $leeftijd, $studie, $geslacht, $foto, $petermeter)
+function editSchacht($schacht_id, $voornaam, $naam, $leeftijd, $studie, $geslacht, $petermeter)
 {
 	$database = connect();
 	$database->update("Schachten", [
@@ -40,7 +40,6 @@ function editSchacht($schacht_id, $voornaam, $naam, $leeftijd, $studie, $geslach
 		 "Leeftijd"=>$leeftijd,
 		 "Studie"=>$studie,
 		 "Geslacht"=>$geslacht,
-		 "Foto"=>$foto,
 		 "Peter/Meter"=>$petermeter
 		  ],
 		  [
